@@ -8,6 +8,4 @@
 
 Git, GitHub, ветки, Pull Request и публикация на GitHub Pages выполняются владельцем репозитория отдельно.
 
-Изображения: [Байкал — Sergey Pesterev / Unsplash](https://unsplash.com/photos/brown-rock-formation-y-b_FOmJXdg), [горный пейзаж / Unsplash](https://unsplash.com/photos/aerial-photography-of-mountain-OL4ozjBJ1WA), [Карелия — Vladimir Fedotov / Unsplash](https://unsplash.com/photos/a-lake-surrounded-by-trees-Ed6sF55nKoI), [Камчатка — Daniil Silantev / Unsplash](https://unsplash.com/photos/fD7cXIFurSQ). Горный снимок используется как атмосферная иллюстрация Алтая.
-
 На странице каталога встроен виджет Яндекс Карт с переключением направлений. Для его работы нужен интернет и доступ к сервисам Яндекса; подписи и ссылки на маршруты доступны отдельно от карты. Программы по дням и условия поездок приведены как примеры. Видеофайл перекодирован: фрагмент с Карелией обрезан без изменения пропорций, размер видео уменьшен.
