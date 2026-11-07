@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Продуманные путешествия по самым красивым местам России.">
+    <title>Маршруты — ТИХО</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body><a class="skip-link" href="#main">К содержанию</a>
+    <header class="header navbar" id="header"><a class="logo" href="index.html"
+            aria-label="Тихо — на главную">ТИХО<span>®</span></a><button class="menu-toggle" type="button"
+            aria-expanded="false" aria-controls="nav">Меню <span>☰</span></button>
+        <nav class="nav" id="nav" aria-label="Основная навигация"><a href="index.html">Главная</a><a aria-current="page"
+                href="catalog.html">Маршруты</a><a href="index.html#about">О нас</a><a href="contacts.html">Контакты</a>
+        </nav><a class="header__cta" href="contacts.html#order-form">Спланировать поездку <span>↗︎</span></a>
+    </header>
+    <main id="main">
+        <section class="page-head">
+            <div class="breadcrumbs"><a href="index.html">Главная</a> / Маршруты</div>
+            <p class="eyebrow">КОЛЛЕКЦИЯ ПУТЕШЕСТВИЙ / 2026</p>
+            <h1>Ваша Россия.<br><em>Ваш маршрут.</em></h1>
+            <p>От прозрачного льда Байкала до вулканов Камчатки. Выберите путешествие под своё настроение.</p>
+        </section>
+        <section class="section catalog">
+            <div class="section__label"><span>ВСЕ МАРШРУТЫ</span><span>НАЙДИТЕ СВОЁ МЕСТО</span></div>
+            <div class="filters" aria-label="Фильтры маршрутов"><label>Регион<select class="form-select" id="region">
+                        <option value="">Все регионы</option>
+                        <option>Байкал</option>
+                        <option>Алтай</option>
+                        <option>Карелия</option>
+                        <option>Камчатка</option>
+                    </select></label><label>Сезон<select class="form-select" id="season">
+                        <option value="">Любой сезон</option>
+                        <option>Зима</option>
+                        <option>Лето</option>
+                        <option>Осень</option>
+                    </select></label><label>Бюджет<select class="form-select" id="budget">
+                        <option value="">Любой бюджет</option>
+                        <option value="80000">До 80 000 ₽</option>
+                        <option value="100000">До 100 000 ₽</option>
+                        <option value="150000">До 150 000 ₽</option>
+                    </select></label><button class="filter-reset" type="button">Сбросить ↺︎</button></div>
+            <div class="catalog__count" aria-live="polite">Найдено маршрутов: <span id="count">4</span></div>
+            <div class="tour-grid row g-3">
+                <article class="tour-card reveal col-12 col-md-6 col-lg-3" data-region="Байкал" data-season="Зима"
+                    data-price="89000"><a href="tour.html?tour=baikal" class="tour-card__image"><img
+                            src="assets/img/0.jpg" alt="Природа: Байкал" loading="lazy"><span
+                            class="tour-card__number">01 / 04</span><span class="tour-card__arrow">↗︎</span></a>
+                    <div class="tour-card__meta"><span>Зима · 7 дней</span><span>от 89 000 ₽</span></div><a
+                        href="tour.html?tour=baikal">
+                        <h3>Байкал</h3>
+                    </a>
+                    <p>Лёд, в котором отражается небо, заснеженные берега и просторы острова Ольхон.</p>
+                </article>
+                <article class="tour-card reveal col-12 col-md-6 col-lg-3" data-region="Алтай" data-season="Лето"
+                    data-price="96000"><a href="tour.html?tour=altai" class="tour-card__image"><img
+                            src="assets/img/1.jpg" alt="Природа: Алтай" loading="lazy"><span
+                            class="tour-card__number">02 / 04</span><span class="tour-card__arrow">↗︎</span></a>
+                    <div class="tour-card__meta"><span>Лето · 8 дней</span><span>от 96 000 ₽</span></div><a
+                        href="tour.html?tour=altai">
+                        <h3>Алтай</h3>
+                    </a>
+                    <p>Там, где горы становятся ближе, а Чуйский тракт ведёт к рекам и широким долинам.</p>
+                </article>
+                <article class="tour-card reveal col-12 col-md-6 col-lg-3" data-region="Карелия" data-season="Лето"
+                    data-price="54000"><a href="tour.html?tour=karelia" class="tour-card__image"><img
+                            src="assets/img/2.jpg" alt="Природа: Карелия" loading="lazy"><span
+                            class="tour-card__number">03 / 04</span><span class="tour-card__arrow">↗︎</span></a>
+                    <div class="tour-card__meta"><span>Лето · 5 дней</span><span>от 54 000 ₽</span></div><a
+                        href="tour.html?tour=karelia">
+                        <h3>Карелия</h3>
+                    </a>
+                    <p>Тишина северных озёр, сосновые леса и скалистые берега Ладоги.</p>
+                </article>
+                <article class="tour-card reveal col-12 col-md-6 col-lg-3" data-region="Камчатка" data-season="Осень"
+                    data-price="149000"><a href="tour.html?tour=kamchatka" class="tour-card__image"><img
+                            src="assets/img/3.jpg" alt="Природа: Камчатка" loading="lazy"><span
+                            class="tour-card__number">04 / 04</span><span class="tour-card__arrow">↗︎</span></a>
+                    <div class="tour-card__meta"><span>Осень · 9 дней</span><span>от 149 000 ₽</span></div><a
+                        href="tour.html?tour=kamchatka">
+                        <h3>Камчатка</h3>
+                    </a>
+                    <p>На краю земли и океана ждут вулканы, чёрные пляжи и просторы Камчатки.</p>
+                </article>
+            </div>
+            <p class="empty" hidden>По этим параметрам маршрутов пока нет. Попробуйте изменить фильтры.</p>
+        </section>
+        <section class="section map-section">
+            <div class="section__label"><span>ГЕОГРАФИЯ</span><span>ОТ ЗАПАДА ДО ВОСТОКА</span></div>
+            <div class="section-heading"><h2>Страна без<br><em>границ впечатлений.</em></h2><p>Выберите направление, чтобы рассмотреть его на Яндекс Карте и перейти к маршруту.</p></div>
+            <div class="map-explorer">
+                <div class="map-explorer__sidebar"><p class="eyebrow">НАПРАВЛЕНИЯ</p><div class="map-explorer__buttons" role="group" aria-label="Выбор направления на карте">
+                    <button type="button" class="map-choice is-active" data-map="baikal" aria-pressed="true"><span>01</span> Байкал <b>↗︎</b></button>
+                    <button type="button" class="map-choice" data-map="altai" aria-pressed="false"><span>02</span> Алтай <b>↗︎</b></button>
+                    <button type="button" class="map-choice" data-map="karelia" aria-pressed="false"><span>03</span> Карелия <b>↗︎</b></button>
+                    <button type="button" class="map-choice" data-map="kamchatka" aria-pressed="false"><span>04</span> Камчатка <b>↗︎</b></button>
+                </div><div class="map-explorer__details" aria-live="polite"><p id="map-caption">Озеро Байкал, Иркутская область</p><a id="map-tour" href="tour.html?tour=baikal" class="text-link">Открыть маршрут <span>↗︎</span></a></div></div>
+                <div class="map-explorer__frame"><iframe id="yandex-map" title="Яндекс Карта: Байкал" src="https://yandex.ru/map-widget/v1/?ll=107.500000%2C53.500000&amp;z=6&amp;pt=107.500000%2C53.500000%2Cpm2rdm" loading="lazy" allowfullscreen></iframe><a class="map-explorer__fallback" id="map-external" href="https://yandex.ru/maps/?ll=107.500000%2C53.500000&amp;z=6" target="_blank" rel="noopener noreferrer">Открыть в Яндекс Картах ↗︎</a></div>
+            </div><p class="map-note">Для загрузки карты необходимо подключение к интернету. Точки обозначают регион путешествия, а не подробную линию маршрута.</p>
+        </section>
+    </main>
+    <footer class="footer site-footer">
+        <div class="site-footer__grid">
+            <div class="site-footer__brand"><a class="logo" href="index.html" aria-label="Тихо — на главную">ТИХО<span>®</span></a><p>Путешествия по России<br>с вниманием к деталям.</p><address class="site-footer__address">г. Москва, ул. Тихая, д. 12, офис 4</address></div>
+            <nav class="site-footer__links" aria-label="Разделы сайта"><span>САЙТ</span><a href="catalog.html">Все маршруты</a><a href="index.html#about">О нас</a><a href="contacts.html">Контакты</a></nav>
+            <nav class="site-footer__links" aria-label="Направления"><span>НАПРАВЛЕНИЯ</span><a href="tour.html?tour=baikal">Байкал</a><a href="tour.html?tour=altai">Алтай</a><a href="tour.html?tour=karelia">Карелия</a><a href="tour.html?tour=kamchatka">Камчатка</a></nav>
+            <div class="site-footer__action"><span>СЛЕДУЮЩИЙ ШАГ</span><p>Выберите свою<br>историю.</p><a class="site-footer__cta" href="contacts.html#order-form">Оставить заявку <span aria-hidden="true">↗︎</span></a></div>
+        </div>
+        <div class="site-footer__bottom"><small>© ТИХО, 2026 · Все права защищены</small><small>Цены и программы приведены для примера</small></div>
+    </footer>
+    <button class="back-to-top" type="button" aria-label="Вернуться наверх" title="Наверх" hidden><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 3 10.8 10h2.3L8 16.2h2.5L5 23h22l-5.5-6.8H24L18.9 10h2.3L16 3Z" fill="currentColor" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M16 23v4.5m-3 0h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+</body>
+
+</html>
