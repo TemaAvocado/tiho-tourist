@@ -1373,3 +1373,12 @@ body{background:var(--paper);color:var(--ink)}
 .review-grid{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 20px)/2);grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
 .review-grid::-webkit-scrollbar{display:none}.review-grid blockquote{scroll-snap-align:start}.review-controls{display:flex;justify-content:flex-end;gap:10px;margin-top:24px}.review-controls button{width:46px;height:46px;border:1px solid #8ca995;border-radius:50%;background:transparent;color:var(--forest-deep);font-size:20px;cursor:pointer}.review-controls button:hover{background:var(--forest-deep);color:#fff}
 @media(max-width:600px){.review-grid{grid-auto-columns:100%;grid-template-columns:none}}
+
+/* ???????? ??????????? ? ????? ??????? ?? ?????? */
+.review-grid .review-card{border:1px solid #e7e7e7;border-radius:16px;padding:24px;background:#fff;color:#222}
+.review-card__author{display:flex;align-items:center;gap:12px}
+.review-card__avatar{display:flex;align-items:center;justify-content:center;flex:0 0 42px;height:42px;border-radius:50%;background:#dce9e2;color:#35634a;font-size:18px;font-weight:700}
+.review-card__avatar--2{background:#f1e5d5;color:#805b31}.review-card__avatar--3{background:#e9e1ef;color:#705282}.review-card__avatar--4{background:#dce9f1;color:#496b80}
+.review-grid .review-card cite{font-size:15px;font-weight:700;color:#222}
+.review-card__rating{margin-top:18px;color:#ffb800;font-size:19px;letter-spacing:2px;line-height:1}
+.review-grid .review-card p{margin:14px 0 0;font-size:15px;line-height:1.55}

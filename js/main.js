@@ -75,7 +75,7 @@ if (tripDate) {
  const updateDate=()=>{const value=tripDate.value, valid=value && tripDate.checkValidity(); const href=`contacts.html?tour=${key}${valid?'&date='+encodeURIComponent(value):''}#order-form`; document.querySelector('#date-order').href=href; document.querySelector('#tour-order').href=href; document.querySelector('#date-selection').textContent=valid?'Выбрано: '+new Date(value+'T12:00:00').toLocaleDateString('ru-RU',{day:'numeric',month:'long',year:'numeric'}):value?'Выберите сегодняшнюю или будущую дату':'Дата пока не выбрана';};
  tripDate.addEventListener('input',updateDate); updateDate();
  const info=routeExtras[key]; document.querySelector('#route-stats').innerHTML=[[info.trips,'поездок организовано'],[info.average,'средняя стоимость на человека'],[info.group,'размер группы'],[tours[key].duration,'продолжительность']].map(([v,l])=>`<div><strong>${v}</strong><span>${l}</span></div>`).join('');
- document.querySelector('#route-reviews').innerHTML=info.reviews.map(([name,quote])=>`<blockquote><span aria-label="5 из 5">★★★★★</span><p>«${quote}»</p><cite>${name}</cite></blockquote>`).join('');
+ document.querySelector('#route-reviews').innerHTML=info.reviews.map(([name,quote], index)=>`<blockquote class="review-card"><div class="review-card__author"><span class="review-card__avatar review-card__avatar--${index + 1}" aria-hidden="true">${name.charAt(0)}</span><cite>${name}</cite></div><div class="review-card__rating" aria-label="5 \u0438\u0437 5"><span aria-hidden="true">\u2605\u2605\u2605\u2605\u2605</span></div><p>${quote}</p></blockquote>`).join('');
 }
 const reviews=document.querySelector('#route-reviews');
 if(reviews){
