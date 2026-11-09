@@ -1354,3 +1354,22 @@ body{background:var(--paper);color:var(--ink)}
 .contact-map iframe { display: block; width: 100%; height: 420px; border: 0; }
 .contact-map .text-link { max-width: 180px; margin-top: 20px; }
 @media (max-width: 600px) { .contact-map iframe { height: 320px; } }
+
+
+/* ???????????? ??????????? ? ??????????? ?????? ????????. */
+.trip-planning,.compare-section{background:#fbfcfa}.route-stats,.calculator-section{background:#edf3ed}.route-reviews{background:#f6f9f5}
+.feature-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9%;align-items:start}
+.feature-layout h2,.compare-section h2,.route-reviews h2{font-size:clamp(37px,4.5vw,64px);margin:18px 0 24px}.feature-layout h2 em,.compare-section h2 em,.route-reviews h2 em{color:var(--accent)}
+.feature-layout>div:first-child>p:not(.eyebrow),.feature-note{color:var(--muted)}.feature-note{font-size:12px;margin:24px 0 0}.date-panel,.calculator{padding:clamp(24px,3vw,40px);background:#fff;border:1px solid var(--line)}
+.date-panel label,.calculator label,.compare-selects label{display:block;font-size:12px;font-weight:700;color:var(--muted)}.date-panel input{margin:12px 0 16px}.date-panel p{font-size:13px;color:var(--muted)}.date-panel .button{width:100%;margin-top:12px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}.stats-grid>div{border-top:1px solid #a9bfad;padding-top:22px}.stats-grid strong,.stats-grid span{display:block}.stats-grid strong{font-size:clamp(24px,3vw,40px);font-weight:400;letter-spacing:-.04em}.stats-grid span{font-size:12px;color:var(--muted);margin-top:8px}
+.review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.review-grid blockquote{margin:0;background:#fff;border:1px solid var(--line);padding:30px}.review-grid blockquote>span{color:var(--accent);letter-spacing:.15em;font-size:13px}.review-grid blockquote p{font-size:17px;line-height:1.6;margin:22px 0}.review-grid cite{font-size:12px;font-style:normal;color:var(--muted)}
+.compare-selects,.calculator__fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.compare-selects{max-width:700px;margin-bottom:28px}.compare-selects select,.calculator select,.calculator input:not([type=checkbox]){margin-top:8px}.compare-table-wrap{overflow-x:auto}.compare-table{width:100%;border-collapse:collapse;min-width:570px;text-align:left}.compare-table th,.compare-table td{border-bottom:1px solid var(--line);padding:16px;vertical-align:top;font-size:14px}.compare-table th:first-child{width:24%;color:var(--muted);font-size:12px}.compare-table thead th{font-size:18px}.compare-table a{color:var(--accent)}
+.calculator fieldset{border:0;border-top:1px solid var(--line);padding:22px 0 0;margin:25px 0}.calculator legend{font-size:12px;font-weight:700;color:var(--muted);float:none;width:auto;margin:0 0 12px}.calculator fieldset label{display:flex;align-items:center;gap:10px;margin:12px 0;font-weight:400}.calculator input[type=checkbox]{accent-color:var(--accent);width:16px;height:16px}.calculator__result{border-top:1px solid var(--line);padding-top:22px;display:grid;gap:6px}.calculator__result span,.calculator__result small{font-size:12px;color:var(--muted)}.calculator__result strong{font-size:32px;font-weight:400}.calculator .text-link{margin-top:25px;max-width:230px}
+@media(max-width:900px){.feature-layout{grid-template-columns:1fr;gap:30px}.stats-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.review-grid,.calculator__fields{grid-template-columns:1fr}.compare-selects{gap:12px}.compare-table th,.compare-table td{padding:14px 10px}.review-grid blockquote{padding:23px}.stats-grid{gap:20px}.feature-layout h2{margin:14px 0 18px}}
+
+/* Карусель отзывов */
+.review-grid{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 20px)/2);grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.review-grid::-webkit-scrollbar{display:none}.review-grid blockquote{scroll-snap-align:start}.review-controls{display:flex;justify-content:flex-end;gap:10px;margin-top:24px}.review-controls button{width:46px;height:46px;border:1px solid #8ca995;border-radius:50%;background:transparent;color:var(--forest-deep);font-size:20px;cursor:pointer}.review-controls button:hover{background:var(--forest-deep);color:#fff}
+@media(max-width:600px){.review-grid{grid-auto-columns:100%;grid-template-columns:none}}
